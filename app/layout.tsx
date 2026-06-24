@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     siteName: "eTech Vidyamandir",
     images: [
       {
-        url: "/hero-school.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "eTech Vidyamandir Campus",
+        alt: "eTech Vidyamandir Logo",
       },
     ],
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "eTech Vidyamandir",
     description: "Empowering the Innovators of Tomorrow. A premier CBSE-affiliated institution.",
-    images: ["/hero-school.png"],
+    images: ["/logo.png"],
   },
   icons: {
     icon: "/logo.png",
