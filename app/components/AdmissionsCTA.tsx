@@ -59,11 +59,18 @@ export default function AdmissionsCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-slate-50 border border-slate-100 p-10 md:p-14 hover:bg-[#507dbd] text-slate-900 hover:text-white group transition-colors duration-500 flex flex-col justify-between aspect-[2/1] sm:aspect-auto sm:min-h-[250px]"
+            className="relative bg-slate-50 border border-slate-100 p-10 md:p-14 hover:bg-[#507dbd] text-slate-900 hover:text-white group transition-colors duration-500 flex flex-col justify-between aspect-[2/1] sm:aspect-auto sm:min-h-[250px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1"
           >
-            <Download className="w-8 h-8 text-slate-300 group-hover:text-white/50 mb-12 transition-colors duration-500" />
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Download Prospectus</h3>
+            {/* Minimalist Circle SVG */}
+            <div className="absolute -bottom-20 -right-20 pointer-events-none z-0">
+              <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="text-slate-200 opacity-50 group-hover:text-white group-hover:opacity-10 transition-all duration-700 transform group-hover:scale-[1.6] ease-out">
+                <circle cx="100" cy="100" r="100" fill="currentColor" />
+              </svg>
+            </div>
+
+            <Download className="w-8 h-8 text-slate-300 group-hover:text-white/90 group-hover:-translate-y-2 transition-all duration-500 relative z-10" />
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold mb-2 group-hover:translate-x-2 transition-transform duration-500">Download Prospectus</h3>
               <p className="text-slate-500 group-hover:text-white/80 font-light text-sm transition-colors duration-500">
                 Explore our comprehensive curriculum and facilities.
               </p>
@@ -77,11 +84,18 @@ export default function AdmissionsCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-slate-50 border border-slate-100 p-10 md:p-14 hover:bg-slate-900 text-slate-900 hover:text-white group transition-colors duration-500 flex flex-col justify-between aspect-[2/1] sm:aspect-auto sm:min-h-[250px]"
+            className="relative bg-slate-50 border border-slate-100 p-10 md:p-14 hover:bg-slate-900 text-slate-900 hover:text-white group transition-colors duration-500 flex flex-col justify-between aspect-[2/1] sm:aspect-auto sm:min-h-[250px] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1"
           >
-            <ArrowRight className="w-8 h-8 text-slate-300 group-hover:text-white/50 mb-12 transition-colors duration-500" />
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Begin Application</h3>
+            {/* Minimalist Circle SVG */}
+            <div className="absolute -top-20 -right-20 pointer-events-none z-0">
+              <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" className="text-slate-200 opacity-50 group-hover:text-white group-hover:opacity-[0.04] transition-all duration-700 transform group-hover:scale-[1.6] ease-out">
+                <circle cx="120" cy="120" r="120" fill="currentColor" />
+              </svg>
+            </div>
+
+            <ArrowRight className="w-8 h-8 text-slate-300 group-hover:text-white/90 group-hover:translate-x-2 transition-all duration-500 relative z-10" />
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold mb-2 group-hover:translate-x-2 transition-transform duration-500">Begin Application</h3>
               <p className="text-slate-500 group-hover:text-white/80 font-light text-sm transition-colors duration-500">
                 Start your official enrollment process for 2026-27.
               </p>
