@@ -36,12 +36,53 @@ export default function About() {
               About Our Institution
             </span>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-slate-900 tracking-tighter leading-none mb-8">
-              A legacy of academic excellence and <span className="font-bold">holistic growth.</span>
+              A legacy of academic excellence and{" "}
+              <span className="relative inline-block">
+                <span className="font-bold">holistic growth.</span>
+                <svg
+                  className="absolute -bottom-3 left-0 w-[105%] h-[20px] md:h-[24px] text-[#fbbf24]"
+                  viewBox="0 0 200 24"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <motion.path
+                    d="M5,16 Q100,0 195,14"
+                    stroke="currentColor"
+                    strokeWidth="4.5"
+                    strokeLinecap="round"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                  />
+                  <motion.path
+                    d="M25,22 Q100,10 170,19"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                  />
+                </svg>
+              </span>
             </h2>
             
-            <p className="text-slate-600 font-light text-lg md:text-xl leading-relaxed mb-12 max-w-lg">
-              eTech Vidyamandir is a premier CBSE institution dedicated to shaping tomorrow's innovators through a rigorous curriculum spanning Grades 8 through 12, featuring a highly specialized Science-exclusive senior secondary program.
-            </p>
+            <div className="flex flex-col gap-4 text-slate-600 font-light text-base md:text-lg leading-relaxed mb-12 max-w-xl">
+              <p>
+                E-tech Vidyamandir is the flagship school of E-tech Educational Group, Odisha's emerging educational group. Over the past decade, E-Tech has garnered a strong reputation as one of the top CBSE schools of the state and definitely as the best residential school of the state because of its dedication and sheer focus on Academics and service to parents. &ldquo;Others Good&rdquo; originates from its three core values: love, care, and respect. The school was started back in 2021.
+              </p>
+              <p>
+                Within the broad-based curriculum options offered, ample opportunities are provided to develop and assess critical, creative thinking skills, the flexibility of approach, the ability to work with and serve others, and the grit and fortitude in the face of challenges.
+              </p>
+              <p>
+                A kaleidoscope of extra-curricular activities supports the institution's education programme to create the ultimate E-tech product - strong, confident individuals and active lifelong learners.
+              </p>
+              <p>
+                E-tech fuels the desire to inculcate a lifelong habit of learning in students, imperative for holistic development. To fuel the seed of learning, the school constantly motivates the students to believe in the motto &ldquo;Learning the treasure within.&rdquo;
+              </p>
+            </div>
 
             <Link href="#admissions" className="inline-flex items-center gap-4 bg-slate-900 text-white hover:bg-[#507dbd] transition-colors duration-300 px-8 py-5 font-bold uppercase tracking-widest text-xs sm:text-sm w-fit mb-16 shadow-xl group">
               Read More

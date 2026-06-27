@@ -9,21 +9,21 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     id: 1,
-    image: "/hero-school.png",
+    image: "/images/1000589210.jpg",
     title: "Empowering Minds.\nInspiring Greatness.",
     subtitle: "Affiliated with the Central Board of Secondary Education (CBSE), delivering a rigorous, globally competitive curriculum.",
     cta: "Apply Now"
   },
   {
     id: 2,
-    image: "/library.png",
-    title: "World-Class\nFacilities.",
-    subtitle: "State-of-the-art libraries, robotics labs, and athletic complexes designed for deep focus and discovery.",
+    image: "/images/1000589260.jpg",
+    title: "World-Class\nAcademics.",
+    subtitle: "State-of-the-art classrooms and interactive orientation programs designed for deep focus and discovery.",
     cta: "Explore Campus"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
+    image: "/images/1000589222.jpg",
     title: "A Legacy Of\nAcademic Excellence.",
     subtitle: "Consistent 100% board exam pass rates and top-tier university placements year after year.",
     cta: "View Academics"

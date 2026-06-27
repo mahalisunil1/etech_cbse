@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, GraduationCap } from "lucide-react";
 import WaveDivider from "./WaveDivider";
 
 export default function Academics() {
@@ -72,7 +72,37 @@ export default function Academics() {
             transition={{ delay: 0.1 }}
             className="text-5xl lg:text-7xl font-light text-slate-900 tracking-tighter leading-none"
           >
-            Our <span className="font-bold">Curriculum.</span>
+            Our{" "}
+            <span className="relative inline-block">
+              <span className="font-bold">Curriculum.</span>
+              <svg
+                className="absolute -bottom-3 left-0 w-[105%] h-[20px] md:h-[24px] text-[#fbbf24]"
+                viewBox="0 0 200 24"
+                fill="none"
+                preserveAspectRatio="none"
+              >
+                <motion.path
+                  d="M5,16 Q100,0 195,14"
+                  stroke="currentColor"
+                  strokeWidth="4.5"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  whileInView={{ pathLength: 1, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                />
+                <motion.path
+                  d="M25,22 Q100,10 170,19"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0, opacity: 0 }}
+                  whileInView={{ pathLength: 1, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                />
+              </svg>
+            </span>
           </motion.h2>
         </div>
 
@@ -124,13 +154,9 @@ export default function Academics() {
                   
                   {/* Rotating Star Badge */}
                   <motion.div 
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
-                    className={`absolute top-8 right-8 w-12 h-12 opacity-20 pointer-events-none ${idx === 1 ? 'text-white' : 'text-slate-900'}`}
+                    className={`absolute top-8 right-8 w-14 h-14 opacity-10 pointer-events-none ${idx === 1 ? 'text-white' : 'text-slate-900'}`}
                   >
-                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-                      <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" />
-                    </svg>
+                    <GraduationCap strokeWidth={1.5} className="w-full h-full" />
                   </motion.div>
 
                   <p className={`text-base sm:text-lg lg:text-xl font-light leading-relaxed mb-12 relative z-10 ${data.subTextColor}`}>

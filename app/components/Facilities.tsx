@@ -85,7 +85,37 @@ export default function Facilities() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-7xl font-light text-slate-900 tracking-tighter leading-none"
             >
-              Our <span className="font-bold">Campus.</span>
+              Our{" "}
+              <span className="relative inline-block">
+                <span className="font-bold">Campus.</span>
+                <svg
+                  className="absolute -bottom-3 left-0 w-[105%] h-[20px] md:h-[24px] text-[#fbbf24]"
+                  viewBox="0 0 200 24"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <motion.path
+                    d="M5,16 Q100,0 195,14"
+                    stroke="currentColor"
+                    strokeWidth="4.5"
+                    strokeLinecap="round"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+                  />
+                  <motion.path
+                    d="M25,22 Q100,10 170,19"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                  />
+                </svg>
+              </span>
             </motion.h2>
           </div>
           
